@@ -1,0 +1,182 @@
+
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Styles */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background-color: #f5f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* Body */
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f5f7fb;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Inputs and Forms */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Application Layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  padding: 24px;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 32px;
+  background-color: #172554;
+  color: white;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #93c5fd;
+}
+
+/* Common Cards */
+.card,
+.event-card,
+.profile-card,
+.booking-summary,
+.event-details-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* Common Messages */
+.error-message {
+  color: #dc2626;
+}
+
+.success-message {
+  color: #15803d;
+}
+
+/* Footer */
+.footer {
+  padding: 18px;
+  text-align: center;
+  background-color: #172554;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .main-content {
+    padding: 14px;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
